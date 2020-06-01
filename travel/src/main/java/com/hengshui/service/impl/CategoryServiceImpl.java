@@ -15,7 +15,9 @@ public class CategoryServiceImpl implements CategoryService {
 
 
     private CategoryDao categoryDao = new CategoryDaoImpl();
-
+	
+	private int age;
+	
     @Override
     public List<Category> findAll() {
         //1.获取jedis,操作redis
